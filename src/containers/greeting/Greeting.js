@@ -2,8 +2,11 @@ import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+// ✅ Replace this:
+// import landingPerson from "../../assets/lottie/landingPerson";
+// ✅ With this:
+import customGif from "../../assets/lottie/girlie.gif";
+
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
@@ -53,7 +56,11 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-          <img src="/girlie.gif" alt="Custom Animation" style={{ width: "100%", height: "auto" }} />
+            <img
+              src="/assets/girlie.gif"
+              alt="Custom Animation"
+              style={{width: "100%", height: "auto"}}
+            />
           </div>
         </div>
       </div>
