@@ -3,15 +3,17 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/girlie.gif"; // Rename to your file name for custom animation
+<img src="/girlie.gif" alt="Splash Animation" style={{ width: "100%", height: "auto" }} />
+
 
 // Splash Screen
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
+  animation: "/girlie.gif", // Use the GIF instead of splashAnimation
   duration: 2000 // Set animation duration as per your animation
 };
+
 
 // Summary And Greeting Section
 
