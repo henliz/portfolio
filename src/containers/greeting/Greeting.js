@@ -53,12 +53,12 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            <img alt="Custom Animation"
-            src="/myGif.gif"  // Make sure the GIF is in the public folder
-            style={{ width: "100%", height: "auto" }}
-          />
-        </div>
-
+            <img
+              alt="Custom Animation"
+              src="/myGif.gif" // Make sure the GIF is in the public folder
+              style={{width: "100%", height: "auto"}}
+            />
+          </div>
         </div>
       </div>
     </Fade>

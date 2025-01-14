@@ -5,8 +5,6 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation.json";
 
-
-
 // Splash Screen
 
 const splashScreen = {
@@ -14,8 +12,6 @@ const splashScreen = {
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
-
-
 
 // Summary And Greeting Section
 
