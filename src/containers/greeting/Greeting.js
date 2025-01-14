@@ -53,11 +53,11 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            <img
-              alt="Custom Animation"
-              src="/girlie.gif" // Make sure the GIF is in the public folder
-              style={{width: "100%", height: "auto"}}
-            />
+          <img
+           src={`${process.env.PUBLIC_URL}/girlie.gif`}
+            alt="Custom Animation"
+            style={{ width: "100%", height: "auto" }}
+          />
           </div>
         </div>
       </div>
