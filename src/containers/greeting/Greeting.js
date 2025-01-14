@@ -53,15 +53,12 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
-          </div>
+            <img alt="Custom Animation"
+            src="/myGif.gif"  // Make sure the GIF is in the public folder
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
+
         </div>
       </div>
     </Fade>
