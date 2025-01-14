@@ -53,11 +53,7 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-          <img
-            src="/girlie.gif"
-            alt="Custom Animation"
-            style={{ width: "100%", height: "auto" }}
-          />
+          <img src="/girlie.gif" alt="Custom Animation" style={{ width: "100%", height: "auto" }} />
           </div>
         </div>
       </div>
