@@ -25,11 +25,11 @@ export default function Greeting() {
             <div>
               <h1 className={isDark ? "dark-mode greeting-text" : "greeting-text"}>
                 {" "}
-                Hi all, I'm Henrietta{" "}
+                Hi, I'm Henrietta{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
               <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"}>
-                A passionate Designer & Developer 🚀 building solutions with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.
+              A human interaction designer & developer 🚀
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
