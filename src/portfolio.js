@@ -21,6 +21,7 @@ const greeting = {
   username: "Henliz",
   title: "Hi, I'm Henrietta",
   subTitle: emoji("A human interaction designer & developer 🚀"),
+  previousWork: "Previously @ HalalMeals & Sun Life",
   resumeLink: "https://drive.google.com/file/d/1mEsUoIU5ImeV4RJ6wqs2K3uFgiN0feaM/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };

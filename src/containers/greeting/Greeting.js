@@ -31,6 +31,9 @@ export default function Greeting() {
               <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"}>
               A human interaction designer & developer 🚀
               </p>
+              <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"} style={{ fontStyle: "italic" }}>
+                Previously <span style={{ fontStyle: "italic" }}>@ HalalMeals & Sun Life</span>
+              </p>
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
