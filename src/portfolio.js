@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Henliz",
-  title: "Hi all, I'm Henrietta",
+  title: "Hi, I'm Henrietta",
   subTitle: emoji(
-    "A passionate Designer & Developer 🚀 building solutions with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A human interaction designer & developer 🚀"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1mEsUoIU5ImeV4RJ6wqs2K3uFgiN0feaM/view?usp=sharing", // Set to empty to hide the button

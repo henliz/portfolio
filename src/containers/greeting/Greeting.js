@@ -47,11 +47,7 @@ export default function Greeting() {
 
           <div className="greeting-image-div">
             {illustration.useGif ? (
-              <img
-                src="/girlie.gif"  // Load GIF from the public folder
-                alt="Custom Animation"
-                style={{ width: "100%", height: "auto" }}
-              />
+              <img src="/portfolio/girlie.gif" alt="Custom Animation" style={{ width: "100%", height: "auto" }} />
             ) : (
               <DisplayLottie animationData={landingPerson} />
             )}
