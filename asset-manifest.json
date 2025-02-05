@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fce4babe.css",
-    "main.js": "/portfolio/static/js/main.0c38e440.js",
+    "main.js": "/portfolio/static/js/main.f3f247bb.js",
     "static/css/64.bba8fa55.chunk.css": "/portfolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/portfolio/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/portfolio/static/js/769.bda0d7b7.chunk.js",
     "static/media/Rheo_Thumbnail.png": "/portfolio/static/media/Rheo_Thumbnail.41ff94c1f809e4adcb04.png",
     "static/media/MagicMirror_Thumbnail.png": "/portfolio/static/media/MagicMirror_Thumbnail.18a2a21ab5e18d39d0b8.png",
-    "static/media/harvardLogo.png": "/portfolio/static/media/harvardLogo.542dab89bfb35b7f5c0d.png",
+    "static/media/University_of_Waterloo_seal.png": "/portfolio/static/media/University_of_Waterloo_seal.eebb608b547e220ed7ba.png",
     "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/SeniorsConnect_Transparent.png": "/portfolio/static/media/SeniorsConnect_Transparent.40cd09be7916861d322e.png",
     "static/media/Agustina.woff": "/portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/IB_Logo.png": "/portfolio/static/media/IB_Logo.91e0e1bec778e052c411.png",
     "static/media/contactMailDark.svg": "/portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/facebookLogo.png": "/portfolio/static/media/facebookLogo.f46d68b24e9b4f73ee8b.png",
@@ -21,7 +22,7 @@
     "index.html": "/portfolio/index.html",
     "static/media/talksCardBack.svg": "/portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.fce4babe.css.map": "/portfolio/static/css/main.fce4babe.css.map",
-    "main.0c38e440.js.map": "/portfolio/static/js/main.0c38e440.js.map",
+    "main.f3f247bb.js.map": "/portfolio/static/js/main.f3f247bb.js.map",
     "64.bba8fa55.chunk.css.map": "/portfolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/portfolio/static/css/769.b3cbb36b.chunk.css.map",
@@ -29,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.fce4babe.css",
-    "static/js/main.0c38e440.js"
+    "static/js/main.f3f247bb.js"
   ]
 }
