@@ -19,9 +19,9 @@ const illustration = {
 
 const greeting = {
   username: "Henliz",
-  title: "Hi, I'm Henrietta",
-  subTitle: emoji("A human interaction designer & developer 🚀"),
-  previousWork: "Previously @ HalalMeals & Sun Life",
+  title: "Hi, I'm Henriëtta",
+  subTitle: emoji("A human-computer interaction designer & developer 🚀"),
+  previousWork: "Previously @ Sun Life & HalalMeals",
   resumeLink: "https://drive.google.com/file/d/1mEsUoIU5ImeV4RJ6wqs2K3uFgiN0feaM/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -66,14 +66,29 @@ const bigProjects = {
 };
 
 // Skills Section
+// Skills Section
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle: "Code, coffee, and a little bit of chaos!",
+  display: true,
+
   skills: [
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third-party services such as Firebase/ AWS / Digital Ocean")
+    "I turn caffeine and late-night ideas into AI-driven apps, sleek user experiences, and game mods.",
   ],
+
+  toolkit: [
+    { emoji: "🖥️", text: "Full-Stack Development: Python, JavaScript, React, Node.js" },
+    { emoji: "🎨", text: "UX/UI Design: Figma, Prototyping, User Research" },
+    { emoji: "🤖", text: "AI & Automation: Machine Learning, Chatbots, Data Processing" },
+    { emoji: "☁️", text: "Cloud & Deployment: Firebase, AWS, Digital Ocean" }
+  ],
+
+  loveCreating: [
+    { emoji: "✨", text: "AI-powered assistants – Smart tools that make life easier" },
+    { emoji: "🍜", text: "UX that feels like comfort food – Simple, warm, and intuitive" },
+    { emoji: "📝", text: "Cool automation tools – Why do things manually when a bot can do it faster?" }
+  ],
+
   softwareSkills: [
     { skillName: "html-5", fontAwesomeClassname: "fab fa-html5" },
     { skillName: "css3", fontAwesomeClassname: "fab fa-css3-alt" },
@@ -81,8 +96,7 @@ const skillsSection = {
     { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
     { skillName: "reactjs", fontAwesomeClassname: "fab fa-react" },
     { skillName: "nodejs", fontAwesomeClassname: "fab fa-node" }
-  ],
-  display: true
+  ]
 };
 
 // Education Section
@@ -94,10 +108,10 @@ const educationInfo = {
       logo: require("./assets/images/University_of_Waterloo_seal.png"),
       subHeader: "Bachelor's of Design (BDes)",
       duration: "September 2022 - present",
-      desc: `Work Integrated Learning Award, CEWIL Scholarship (2024)
-            Hack The North (2024)
-            Peer Leader, UW Housing (2023)
-            Project Manager, UW CUBE (2023)
+      desc: `Work Integrated Learning Award, CEWIL Scholarship (2024),
+            Hack The North (2024),
+            Peer Leader, UW Housing (2023),
+            Project Manager, UW CUBE (2023),
             President’s Scholarship (2022)`
     },
     {

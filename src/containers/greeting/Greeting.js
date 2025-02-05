@@ -25,21 +25,21 @@ export default function Greeting() {
             <div>
               <h1 className={isDark ? "dark-mode greeting-text" : "greeting-text"}>
                 {" "}
-                Hi, I'm Henrietta{" "}
+                Hi, I'm Henriëtta{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
               <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"}>
-              A human interaction designer & developer 🚀
+              A human-computer interaction designer & developer 🚀
               </p>
               <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"} style={{ fontStyle: "italic" }}>
-                Previously <span style={{ fontStyle: "italic" }}>@ HalalMeals & Sun Life</span>
+                Previously <span style={{ fontStyle: "italic" }}>@ Sun Life & HalalMeals</span>
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 <a
                   href={require("./resume.pdf")}
-                  download="Resume.pdf"
+                  download="Henrietta-vanNiekerk-Resume.pdf"
                   className="download-link-button"
                 >
                   <Button text="Download my resume" />
