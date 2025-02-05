@@ -38,6 +38,21 @@ const socialMediaLinks = {
   display: true // Set true to display this section, defaults to false
 };
 
+// Big Projects
+const bigProjects = {
+  title: "Case Studies",
+  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  projects: [
+    {
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "Saayahealth",
+      projectDesc: "Lorem ipsum dolor sit amet.",
+      footerLink: [{ name: "Visit Website", url: "http://saayahealth.com/" }]
+    }
+  ],
+  display: true
+};
+
 // Skills Section
 const skillsSection = {
   title: "What I do",
@@ -100,21 +115,6 @@ const workExperiences = {
 // Open Source
 const openSource = {
   showGithubProfile: "true",
-  display: true
-};
-
-// Big Projects
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet.",
-      footerLink: [{ name: "Visit Website", url: "http://saayahealth.com/" }]
-    }
-  ],
   display: true
 };
 
@@ -185,8 +185,8 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  // number: "+92-0000000000",
+  email_address: "hennielizzie@gmail.com"
 };
 
 // Twitter Section
