@@ -44,10 +44,22 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
+      image: require("./assets/images/SeniorsConnect_Transparent.png"),
+      projectName: "Seniors Connect",
+      projectDesc: "Nurturing timeless bonds to fight the loneliness epedemic facing our seniors.",
+      footerLink: [{ name: "View Project", url: "http://saayahealth.com/" }]
+    },
+    {
+      image: require("./assets/images/Rheo_Thumbnail.png"),
+      projectName: "Rheo Thompson",
+      projectDesc: "Bringing a beloved brand into the 21st century with a modern twist.",
+      footerLink: [{ name: "View Project", url: "http://saayahealth.com/" }]
+    },
+    {
+      image: require("./assets/images/MagicMirror_Thumbnail.png"),
+      projectName: "Magic Mirror",
       projectDesc: "Lorem ipsum dolor sit amet.",
-      footerLink: [{ name: "Visit Website", url: "http://saayahealth.com/" }]
+      footerLink: [{ name: "View Project", url: "http://saayahealth.com/" }]
     }
   ],
   display: true
@@ -79,10 +91,21 @@ const educationInfo = {
   schools: [
     {
       schoolName: "University of Waterloo",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Bachelor's of Human Centered Design (GBDA)",
-      duration: "September 2022 - April 2027",
-      desc: "Participated in the research of XXX and published 3 papers."
+      logo: require("./assets/images/University_of_Waterloo_seal.png"),
+      subHeader: "Bachelor's of Design (BDes)",
+      duration: "September 2022 - present",
+      desc: `Work Integrated Learning Award, CEWIL Scholarship (2024)
+            Hack The North (2024)
+            Peer Leader, UW Housing (2023)
+            Project Manager, UW CUBE (2023)
+            President’s Scholarship (2022)`
+    },
+    {
+      schoolName: "Interational Baccalaureate Programme",
+      logo: require("./assets/images/IB_Logo.png"),
+      subHeader: "International Baccalaureate Diploma",
+      duration: "September 2020 - May 2022",
+      desc: "Honour Roll (2020-2022)"
     }
   ]
 };
