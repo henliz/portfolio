@@ -1,7 +1,8 @@
 import React, {useContext} from "react";
 import "./Podcast.scss";
 import {podcastSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+// import {Fade} from "react-reveal";
+import { motion } from "framer-motion";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Podcast() {
@@ -14,7 +15,11 @@ export default function Podcast() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="main">
         <div className="podcast-header">
           <h1 className="podcast-header-title">{podcastSection.title}</h1>
@@ -31,12 +36,15 @@ export default function Podcast() {
         <div className="podcast-main-div">
           {podcastSection.podcast.map((podcastLink, i) => {
             if (!podcastLink) {
-              console.log(
-                `Podcast link for ${podcastSection.title} is missing`
-              );
+              console.log(`Podcast link for ${podcastSection.title} is missing`);
             }
             return (
-              <div key={i}>
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: i * 0.2 }} // Staggered effect
+              >
                 <iframe
                   className="podcast"
                   src={podcastLink}
@@ -44,11 +52,12 @@ export default function Podcast() {
                   scrolling="no"
                   title="Podcast"
                 ></iframe>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
-    </Fade>
+    </motion.div>
+
   );
 }

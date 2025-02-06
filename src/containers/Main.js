@@ -59,10 +59,6 @@ const Main = () => {
             <WorkExperience />
             <Projects />
             <Achievement />
-            // Blogs in this line
-            // Talks in this line
-            // Twitter in this line
-            // Podcast in this line
             <Profile />
             <Footer />
             <ScrollToTopButton />

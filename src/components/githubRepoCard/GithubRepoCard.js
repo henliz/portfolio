@@ -1,6 +1,7 @@
 import React from "react";
 import "./GithubRepoCard.scss";
-import {Fade} from "react-reveal";
+//import {Fade} from "react-reveal";
+import { motion } from "framer-motion";
 import {formatFileSizeDisplay} from "../../utils";
 
 export default function GithubRepoCard({repo, isDark}) {
@@ -14,7 +15,11 @@ export default function GithubRepoCard({repo, isDark}) {
   }
 
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div>
         <div
           className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}
@@ -32,7 +37,7 @@ export default function GithubRepoCard({repo, isDark}) {
             >
               <path
                 fillRule="evenodd"
-                d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
               ></path>
             </svg>
             <p className="repo-name">{repo.node.name}</p>
@@ -44,7 +49,7 @@ export default function GithubRepoCard({repo, isDark}) {
                 <span>
                   <div
                     className="language-color"
-                    style={{backgroundColor: repo.node.primaryLanguage.color}}
+                    style={{ backgroundColor: repo.node.primaryLanguage.color }}
                   ></div>
                   <p>{repo.node.primaryLanguage.name}</p>
                 </span>
@@ -90,6 +95,6 @@ export default function GithubRepoCard({repo, isDark}) {
           </div>
         </div>
       </div>
-    </Fade>
+    </motion.div>
   );
 }

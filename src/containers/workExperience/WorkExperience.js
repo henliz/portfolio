@@ -2,7 +2,8 @@ import React, {useContext} from "react";
 import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import {workExperiences} from "../../portfolio";
-import {Fade} from "react-reveal";
+//import {Fade} from "react-reveal";
+import { motion } from "framer-motion";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function WorkExperience() {
@@ -10,31 +11,42 @@ export default function WorkExperience() {
   if (workExperiences.display) {
     return (
       <div id="experience">
-        <Fade bottom duration={1000} distance="20px">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="experience-container" id="workExperience">
             <div>
               <h1 className="experience-heading">Experiences</h1>
               <div className="experience-cards-div">
                 {workExperiences.experience.map((card, i) => {
                   return (
-                    <ExperienceCard
+                    <motion.div
                       key={i}
-                      isDark={isDark}
-                      cardInfo={{
-                        company: card.company,
-                        desc: card.desc,
-                        date: card.date,
-                        companylogo: card.companylogo,
-                        role: card.role,
-                        descBullets: card.descBullets
-                      }}
-                    />
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.8, delay: i * 0.2 }} // Stagger effect
+                    >
+                      <ExperienceCard
+                        isDark={isDark}
+                        cardInfo={{
+                          company: card.company,
+                          desc: card.desc,
+                          date: card.date,
+                          companylogo: card.companylogo,
+                          role: card.role,
+                          descBullets: card.descBullets
+                        }}
+                      />
+                    </motion.div>
                   );
                 })}
               </div>
             </div>
           </div>
-        </Fade>
+        </motion.div>
+
       </div>
     );
   }

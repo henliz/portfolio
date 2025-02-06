@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { Fade } from "react-reveal";
+// import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";  // Lottie Animation
@@ -18,7 +19,11 @@ export default function Greeting() {
   const { isDark } = useContext(StyleContext);
 
   return (
-    <Fade bottom duration={1000} distance="40px">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -28,10 +33,19 @@ export default function Greeting() {
                 Hi, I'm Henriëtta{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
-              <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"}>
-              A human-computer interaction designer & developer 🚀
+              <p
+                className={
+                  isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"
+                }
+              >
+                A human-computer interaction designer & developer 🚀
               </p>
-              <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"} style={{ fontStyle: "italic" }}>
+              <p
+                className={
+                  isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"
+                }
+                style={{ fontStyle: "italic" }}
+              >
                 Previously <span style={{ fontStyle: "italic" }}>@ Sun Life & HalalMeals</span>
               </p>
               <SocialMedia />
@@ -50,13 +64,18 @@ export default function Greeting() {
 
           <div className="greeting-image-div">
             {illustration.useGif ? (
-              <img src="/portfolio/girlie.gif" alt="Custom Animation" style={{ width: "100%", height: "auto" }} />
+              <img
+                src="/portfolio/girlie.gif"
+                alt="Custom Animation"
+                style={{ width: "100%", height: "auto" }}
+              />
             ) : (
               <DisplayLottie animationData={landingPerson} />
             )}
           </div>
         </div>
       </div>
-    </Fade>
+    </motion.div>
+
   );
 }
