@@ -3,7 +3,7 @@ import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
 import {blogSection} from "../../portfolio";
 //import {Fade} from "react-reveal";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import StyleContext from "../../contexts/StyleContext";
 export default function Blogs() {
   const {isDark} = useContext(StyleContext);
@@ -50,9 +50,9 @@ export default function Blogs() {
   }
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      initial={{opacity: 0, y: 20}}
+      animate={{opacity: 1, y: 0}}
+      transition={{duration: 1}}
     >
       <div className="main" id="blogs">
         <div className="blog-header">
@@ -67,7 +67,8 @@ export default function Blogs() {
         </div>
         <div className="blog-main-div">
           <div className="blog-text-div">
-            {blogSection.displayMediumBlogs !== "true" || mediumBlogs === "Error"
+            {blogSection.displayMediumBlogs !== "true" ||
+            mediumBlogs === "Error"
               ? blogSection.blogs.map((blog, i) => {
                   return (
                     <BlogCard
@@ -99,6 +100,5 @@ export default function Blogs() {
         </div>
       </div>
     </motion.div>
-
   );
 }

@@ -22,7 +22,8 @@ const greeting = {
   title: "Hi, I'm Henriëtta",
   subTitle: emoji("A human-computer interaction designer & developer 🚀"),
   previousWork: "Previously @ Sun Life & HalalMeals",
-  resumeLink: "https://drive.google.com/file/d/1mEsUoIU5ImeV4RJ6wqs2K3uFgiN0feaM/view?usp=sharing",
+  resumeLink:
+    "https://drive.google.com/file/d/1mEsUoIU5ImeV4RJ6wqs2K3uFgiN0feaM/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -46,20 +47,22 @@ const bigProjects = {
     {
       image: require("./assets/images/SeniorsConnect_Transparent.png"),
       projectName: "Seniors Connect",
-      projectDesc: "Nurturing timeless bonds to fight the loneliness epedemic facing our seniors.",
-      footerLink: [{ name: "View Project", url: "http://saayahealth.com/" }]
+      projectDesc:
+        "Nurturing timeless bonds to fight the loneliness epedemic facing our seniors.",
+      footerLink: [{name: "View Project", url: "http://saayahealth.com/"}]
     },
     {
       image: require("./assets/images/Rheo_Thumbnail.png"),
       projectName: "Rheo Thompson",
-      projectDesc: "Bringing a beloved brand into the 21st century with a modern twist.",
-      footerLink: [{ name: "View Project", url: "http://saayahealth.com/" }]
+      projectDesc:
+        "Bringing a beloved brand into the 21st century with a modern twist.",
+      footerLink: [{name: "View Project", url: "http://saayahealth.com/"}]
     },
     {
       image: require("./assets/images/MagicMirror_Thumbnail.png"),
       projectName: "Magic Mirror",
       projectDesc: "Lorem ipsum dolor sit amet.",
-      footerLink: [{ name: "View Project", url: "http://saayahealth.com/" }]
+      footerLink: [{name: "View Project", url: "http://saayahealth.com/"}]
     }
   ],
   display: true
@@ -73,29 +76,44 @@ const skillsSection = {
   display: true,
 
   skills: [
-    "I turn caffeine and late-night ideas into AI-driven apps, sleek user experiences, and game mods.",
+    "I turn caffeine and late-night ideas into AI-driven apps, sleek user experiences, and game mods."
   ],
 
   toolkit: [
-    { emoji: "🖥️", text: "Full-Stack Development: Python, JavaScript, React, Node.js" },
-    { emoji: "🎨", text: "UX/UI Design: Figma, Prototyping, User Research" },
-    { emoji: "🤖", text: "AI & Automation: Machine Learning, Chatbots, Data Processing" },
-    { emoji: "☁️", text: "Cloud & Deployment: Firebase, AWS, Digital Ocean" }
+    {
+      emoji: "🖥️",
+      text: "Full-Stack Development: Python, JavaScript, React, Node.js"
+    },
+    {emoji: "🎨", text: "UX/UI Design: Figma, Prototyping, User Research"},
+    {
+      emoji: "🤖",
+      text: "AI & Automation: Machine Learning, Chatbots, Data Processing"
+    },
+    {emoji: "☁️", text: "Cloud & Deployment: Firebase, AWS, Digital Ocean"}
   ],
 
   loveCreating: [
-    { emoji: "✨", text: "AI-powered assistants – Smart tools that make life easier" },
-    { emoji: "🍜", text: "UX that feels like comfort food – Simple, warm, and intuitive" },
-    { emoji: "📝", text: "Cool automation tools – Why do things manually when a bot can do it faster?" }
+    {
+      emoji: "✨",
+      text: "AI-powered assistants – Smart tools that make life easier"
+    },
+    {
+      emoji: "🍜",
+      text: "UX that feels like comfort food – Simple, warm, and intuitive"
+    },
+    {
+      emoji: "📝",
+      text: "Cool automation tools – Why do things manually when a bot can do it faster?"
+    }
   ],
 
   softwareSkills: [
-    { skillName: "html-5", fontAwesomeClassname: "fab fa-html5" },
-    { skillName: "css3", fontAwesomeClassname: "fab fa-css3-alt" },
-    { skillName: "sass", fontAwesomeClassname: "fab fa-sass" },
-    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
-    { skillName: "reactjs", fontAwesomeClassname: "fab fa-react" },
-    { skillName: "nodejs", fontAwesomeClassname: "fab fa-node" }
+    {skillName: "html-5", fontAwesomeClassname: "fab fa-html5"},
+    {skillName: "css3", fontAwesomeClassname: "fab fa-css3-alt"},
+    {skillName: "sass", fontAwesomeClassname: "fab fa-sass"},
+    {skillName: "JavaScript", fontAwesomeClassname: "fab fa-js"},
+    {skillName: "reactjs", fontAwesomeClassname: "fab fa-react"},
+    {skillName: "nodejs", fontAwesomeClassname: "fab fa-node"}
   ]
 };
 
@@ -128,9 +146,9 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true,
   experience: [
-    { Stack: "Frontend/Design", progressPercentage: "90%" },
-    { Stack: "Backend", progressPercentage: "70%" },
-    { Stack: "Programming", progressPercentage: "60%" }
+    {Stack: "Frontend/Design", progressPercentage: "90%"},
+    {Stack: "Backend", progressPercentage: "70%"},
+    {Stack: "Programming", progressPercentage: "60%"}
   ],
   displayCodersrank: false
 };
@@ -164,9 +182,7 @@ const achievementSection = {
       title: "Google Code-In Finalist",
       subtitle: "First Pakistani to be selected as Google Code-in Finalist.",
       image: require("./assets/images/codeInLogo.webp"),
-      footerLink: [
-        { name: "Certification", url: "https://drive.google.com" }
-      ]
+      footerLink: [{name: "Certification", url: "https://drive.google.com"}]
     }
   ],
   display: true
@@ -221,7 +237,8 @@ const resumeSection = {
 // Contact Section
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle:
+    "Discuss a project or just want to say hi? My Inbox is open for all.",
   // number: "+92-0000000000",
   email_address: "hennielizzie@gmail.com"
 };

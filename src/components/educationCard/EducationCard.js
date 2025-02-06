@@ -1,5 +1,5 @@
 import React, {createRef, useContext} from "react";
-import { motion } from "framer-motion";  // ✅ Using framer-motion instead
+import {motion} from "framer-motion"; // ✅ Using framer-motion instead
 import "./EducationCard.scss";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -24,9 +24,9 @@ export default function EducationCard({school}) {
     <div>
       {/* Main Card Animation */}
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        initial={{opacity: 0, x: -50}}
+        animate={{opacity: 1, x: 0}}
+        transition={{duration: 1}}
         className="education-card"
       >
         {school.logo && (
@@ -53,7 +53,9 @@ export default function EducationCard({school}) {
             >
               {school.subHeader}
             </h5>
-            <p className={`${isDark ? "dark-mode" : ""} education-text-duration`}>
+            <p
+              className={`${isDark ? "dark-mode" : ""} education-text-duration`}
+            >
               {school.duration}
             </p>
             <p className="education-text-desc">{school.desc}</p>
@@ -68,12 +70,11 @@ export default function EducationCard({school}) {
 
       {/* ✅ Replace <Slide> with Framer Motion */}
       <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2 }}
+        initial={{opacity: 0, x: -100}}
+        animate={{opacity: 1, x: 0}}
+        transition={{duration: 2}}
         className="education-card-border"
       />
     </div>
   );
 }
-

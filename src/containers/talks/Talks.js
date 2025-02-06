@@ -3,7 +3,7 @@ import "./Talks.scss";
 import TalkCard from "../../components/talkCard/TalkCard";
 import {talkSection} from "../../portfolio";
 //import {Fade} from "react-reveal";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Talks() {
@@ -13,16 +13,18 @@ export default function Talks() {
   }
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      initial={{opacity: 0, y: 20}}
+      animate={{opacity: 1, y: 0}}
+      transition={{duration: 1}}
     >
       <div className="main" id="talks">
         <div className="talk-header">
           <h1 className="talk-header-title">{talkSection.title}</h1>
           <p
             className={
-              isDark ? "dark-mode talk-header-subtitle" : "subTitle talk-header-subtitle"
+              isDark
+                ? "dark-mode talk-header-subtitle"
+                : "subTitle talk-header-subtitle"
             }
           >
             {talkSection.subtitle}
@@ -31,9 +33,9 @@ export default function Talks() {
             return (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: i * 0.2 }} // Staggered animation
+                initial={{opacity: 0, y: 20}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.8, delay: i * 0.2}} // Staggered animation
               >
                 <TalkCard
                   talkDetails={{
@@ -51,6 +53,5 @@ export default function Talks() {
         </div>
       </div>
     </motion.div>
-
   );
 }

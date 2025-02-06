@@ -4,7 +4,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {contactInfo, isHireable} from "../../portfolio";
 import emoji from "react-easy-emoji";
 // import {Fade} from "react-reveal";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 export default function GithubProfileCard({prof}) {
   if (isHireable) {
@@ -14,9 +14,9 @@ export default function GithubProfileCard({prof}) {
   }
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      initial={{opacity: 0, y: 20}}
+      animate={{opacity: 1, y: 0}}
+      transition={{duration: 1}}
       className="main"
       id="contact"
     >
@@ -48,7 +48,9 @@ export default function GithubProfileCard({prof}) {
             </div>
           )}
           <div className="opp-div">
-            <span className="desc-prof">Open for opportunities: {prof.hireable}</span>
+            <span className="desc-prof">
+              Open for opportunities: {prof.hireable}
+            </span>
           </div>
           <SocialMedia />
         </div>

@@ -3,7 +3,7 @@ import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
 import {achievementSection} from "../../portfolio";
 // import {Fade} from "react-reveal";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import StyleContext from "../../contexts/StyleContext";
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
@@ -12,9 +12,9 @@ export default function Achievement() {
   }
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      initial={{opacity: 0, y: 20}}
+      animate={{opacity: 1, y: 0}}
+      transition={{duration: 1}}
     >
       <div className="main" id="achievements">
         <div className="achievement-main-div">

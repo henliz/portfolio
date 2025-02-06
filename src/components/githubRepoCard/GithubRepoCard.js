@@ -1,7 +1,7 @@
 import React from "react";
 import "./GithubRepoCard.scss";
 //import {Fade} from "react-reveal";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import {formatFileSizeDisplay} from "../../utils";
 
 export default function GithubRepoCard({repo, isDark}) {
@@ -16,9 +16,9 @@ export default function GithubRepoCard({repo, isDark}) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      initial={{opacity: 0, y: 20}}
+      animate={{opacity: 1, y: 0}}
+      transition={{duration: 1}}
     >
       <div>
         <div
@@ -49,7 +49,7 @@ export default function GithubRepoCard({repo, isDark}) {
                 <span>
                   <div
                     className="language-color"
-                    style={{ backgroundColor: repo.node.primaryLanguage.color }}
+                    style={{backgroundColor: repo.node.primaryLanguage.color}}
                   ></div>
                   <p>{repo.node.primaryLanguage.name}</p>
                 </span>
